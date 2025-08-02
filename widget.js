@@ -41,7 +41,7 @@ Be brief, helpful, and always lead toward booking or calling the office.`;
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
+        "Authorization": "Bearer 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"
       },
       body: JSON.stringify({
         model: "gpt-4",
