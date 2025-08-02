@@ -1,5 +1,5 @@
 
-// CoreBot - AI Powered Widget (Smart Version)
+// CoreBot - AI Powered Widget via Cloudflare Worker
 document.addEventListener("DOMContentLoaded", function () {
   const bubble = document.createElement("div");
   bubble.id = "corebot-bubble";
@@ -37,11 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
 - Provide location/directions if asked.
 Be brief, helpful, and always lead toward booking or calling the office.`;
 
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    const response = await fetch("https://corebot.drtyler.workers.dev", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         model: "gpt-4",
